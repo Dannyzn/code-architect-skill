@@ -81,9 +81,37 @@ When analyzing a project, provide:
 ...
 ```
 
+## Document Generation
+
+Generate learning materials to help non-technical users understand projects:
+
+### PDF Learning Guide
+
+Use `scripts/generate_learning_guide.py` to create comprehensive PDF guides:
+
+```bash
+python3 scripts/generate_learning_guide.py repo_info.json output.pdf
+```
+
+**Input format** (`repo_info.json`):
+```json
+{
+  "name": "Project Name",
+  "purpose": "What it does",
+  "tech_stack": "Technologies used",
+  "architecture": "Architecture description",
+  "components": "Core components",
+  "steps": "Implementation steps",
+  "examples": "Code examples"
+}
+```
+
+**Fallback option**: If pandoc is unavailable, use `scripts/generate_pdf_simple.py` (requires `pip install reportlab`).
+
 ## Tips
 
 - Focus on understanding before building
 - Start simple, add complexity later
 - Use the original code as reference, not as copy-paste source
 - Explain the "why" behind architectural decisions
+- Generate documentation for non-technical stakeholders

@@ -1,0 +1,10 @@
+{
+  "name": "Example Project",
+  "purpose": "A web application for task management",
+  "tech_stack": "React, Node.js, Express, MongoDB",
+  "architecture": "### Frontend\n- React components for UI\n- Redux for state management\n\n### Backend\n- Express REST API\n- MongoDB for data storage\n\n### Communication\n- RESTful API calls\n- JWT authentication",
+  "components": "1. **User Interface** - React components\n2. **API Server** - Express routes and controllers\n3. **Database** - MongoDB collections\n4. **Authentication** - JWT middleware",
+  "steps": "1. Set up project structure\n2. Create database schema\n3. Build API endpoints\n4. Implement authentication\n5. Create React components\n6. Connect frontend to backend\n7. Test and deploy",
+  "examples": "```javascript\n// Example API endpoint\napp.get('/api/tasks', async (req, res) => {\n  const tasks = await Task.find();\n  res.json(tasks);\n});\n```",
+  "next_steps": "- Add more features\n- Improve UI/UX\n- Deploy to production"
+}
