@@ -108,6 +108,23 @@ python3 scripts/generate_learning_guide.py repo_info.json output.pdf
 
 **Fallback option**: If pandoc is unavailable, use `scripts/generate_pdf_simple.py` (requires `pip install reportlab`).
 
+### PowerPoint Presentation
+
+Use `scripts/generate_presentation.py` to create presentation slides:
+
+```bash
+python3 scripts/generate_presentation.py repo_info.json output.pptx
+```
+
+Requires: `pip install python-pptx`
+
+**Slides generated:**
+- Title slide
+- Project overview
+- Architecture
+- Core components
+- Implementation steps
+
 ## Tips
 
 - Focus on understanding before building
