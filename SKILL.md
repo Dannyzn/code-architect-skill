@@ -124,6 +124,24 @@ Requires: `pip install python-pptx`
 - Architecture
 - Core components
 - Implementation steps
+- Code examples
+- Testing and validation
+
+### Implementation Documentation
+
+Use `scripts/generate_implementation_doc.py` to create step-by-step tutorials:
+
+```bash
+python3 scripts/generate_implementation_doc.py repo_info.json implementation_guide.md
+```
+
+**Content includes:**
+- Prerequisites and tech stack
+- Architecture overview
+- Detailed implementation steps with checkpoints
+- Code examples
+- Testing guidelines
+- Next steps and resources
 
 ## Tips
 
